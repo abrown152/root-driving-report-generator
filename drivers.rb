@@ -1,4 +1,4 @@
-require './trips.rb'
+require_relative 'trips'
 
 class Driver
   @@all_drivers = []

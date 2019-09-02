@@ -6,5 +6,8 @@ Parsing time inline so as to leave the data as true as possible
 
 Rounding the total miles on output instead of on calculation so speed can be calculated using the more accurate float value
 
+Considered using a testing framework like RSpec but decided against it as the code reviewer may not have it installed and I'd like to give them as few steps as possible
+
 How I Would Refactor:
 - Would get rid of nested loop in compile_report method
+- Add error handling

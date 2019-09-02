@@ -1,15 +1,22 @@
-require './drivers.rb'
-require './trips.rb'
+require_relative 'drivers'
+require_relative 'trips'
 
 class Report
-  def initialize
-    @file_data = $stdin.read.split(/\n+/).map{ |record| record.split(" ")}
+  attr_reader :trips, :drivers, :file_data
+
+  def initialize()
+    @file_data = []
     @drivers = []
     @trips = []
   end
 
+  def consume_stdin
+    @file_data = $stdin.read.split(/\n+/).map{ |record| record.split(" ")}
+  end
+
   # Sequencer method that runs through all steps needed to generate a report.
   def generate_report
+    self.consume_stdin
     self.data_sorter
 
     @drivers.each do |driver|

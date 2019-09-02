@@ -1,4 +1,4 @@
-require './drivers.rb'
+require_relative 'drivers'
 require 'time'
 
 class Trip
