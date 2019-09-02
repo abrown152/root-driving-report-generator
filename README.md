@@ -36,6 +36,7 @@ To run the tests, run the following commands from the `root-driving-report-gener
 
 ### How I Would Refactor:
 - Add some logic for standardizing the data (just in case!)
-- Add some helpful error-handling
-- Get rid of the nested loop in `compile_report` method
+- Add some helpful error-handling.
+- Write more robust tests.
+- Get rid of the nested loop in `compile_report` method.
 - I'd like to make sure the `trips` attribute in the `Driver` class is storing a reference to the `trips` instances rather than the actual data. If it's not, I'd design a leaner approach.
