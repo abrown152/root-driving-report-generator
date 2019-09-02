@@ -1,6 +1,6 @@
 require "test/unit"
-require_relative "drivers"
-require_relative "trips"
+require "../app/drivers.rb"
+require "../app/trips.rb"
 
 class TestDriver < Test::Unit::TestCase
 
