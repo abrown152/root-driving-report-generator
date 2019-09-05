@@ -2,6 +2,8 @@
 
 This program consumes a `.txt` file of driver and trip data and returns a driving history report based on driver sorted by most to least total miles driven. Drivers with no valid trips will not be included in the generated report.
 
+You can view the full problem statement [here](https://gist.github.com/dan-manges/1e1854d0704cb9132b74).
+
 ### How To Run:
 
 To use the generator, run the following command from the `root-driving-report-generator` directory in your terminal:
