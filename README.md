@@ -33,12 +33,12 @@ To run the tests, run the following commands from the `root-driving-report-gener
 - I rounded the `total_distance` on output instead of on calculation so `average_speed` could be calculated using the more accurate float value.
 
 
-- I considered using a testing framework like RSpec but decided against it as the code reviewer may not have it installed and I always appreciate not having to do any yak shaving when reviewing code samples.
+- I considered using a testing framework like RSpec but decided against it as the code reviewer may not have it installed and I always appreciate not having to do any yak shaving when reviewing code samples. I also considered building this out as a Rails app but thought that was a bit heavy for the ask. Would've been fun though! :)
 
 
 ### How I Would Refactor:
 - Add some logic for standardizing the data (just in case!)
 - Add some helpful error-handling.
 - Write more robust tests.
-- Get rid of the nested loop in `compile_report` method.
+- Improve latency.
 - I'd like to make sure the `trips` attribute in the `Driver` class is storing a reference to the `trips` instances rather than the actual data. If it's not, I'd design a leaner approach.
